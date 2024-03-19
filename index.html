@@ -1,0 +1,55 @@
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="information">
+            <div style="color: #ADF702;">Logo</div><div>Logo</div>
+        </div>
+        <div class="select" id="select">
+            <div class="line" style="margin-bottom: 7px;"></div>
+            <div class="line" style="margin-bottom: 7px;"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+    <div class="option" id="option">
+        <div class="optiontext">
+            <div style="margin-bottom: 10px;">Aktualne promocje</div>
+            <div style="margin-bottom: 10px;">O nas</div>
+            <div style="margin-bottom: 10px;">Kontakt</div>
+            <div>Opinie</div>
+        </div>
+    </div>
+
+    <div class="homepage">
+        <div class="header">Jak to działa?</div>
+        <div class="footer">Otóż, gdy zarejestrujesz się i zweryfikujesz swoje konto na danej aplikacji lub stronie za pomocą specjalnego linku, który dostaniesz od nas, dostaniesz określone pieniądze. To takie proste!</div>
+        <img class="image" id="image" src="cashonhand.png"/>
+    </div>
+
+    <div class="vouchpage">
+        <div class="header">Dlaczego nam zaufać?</div>
+        <div class="footer">Ponieważ mamy wieloletnie doświadczenie w branży afiliacyjnej oraz potwierdzoną reputację na platformie Facebook. Posiadamy szerokie grono zaufanych klientów, którzy regularnie korzystają z naszych usług i polecają nas dalej.</div>
+        <img class="image" id="image" src="starsonhand.png"/>
+    </div>
+
+    <div class="actualpromotion"><a href="">Przejdź do aktualnych promocji</a></div>
+    <script>
+
+        var variable = 0;
+        document.getElementById("select").onclick = function() {
+            if (variable == 0) {
+                document.getElementById("option").style.height = "120px";
+                variable = 1;
+            } else if (variable == 1) {
+                document.getElementById("option").style.height = "0";
+                variable = 0;
+            };
+        };
+    </script>
+</body>
+</html>
